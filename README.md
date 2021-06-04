@@ -2,6 +2,8 @@ This project Bloging website is an assessment test for Junior Full Stack Develop
 
 Dear HR or the representatives from OiiU, Please have a look at the code base. Thank you.
 
+I am still learning and I would love to have the oppurtunity to keep learning.  
+
 Given Task Requirements:  
 1) Users can create a new post.    
 2) Users can view's other's post.  
@@ -38,6 +40,6 @@ mongoDB Atlas cloud. But I was able to get the number of likes a post has if tha
 
 I was facing problems with manipulating the likes count per post.
 
-I am still learning and I would love to have the oppurtunity to keep learning.
+
 
 Thank you, Munir Hassan.
