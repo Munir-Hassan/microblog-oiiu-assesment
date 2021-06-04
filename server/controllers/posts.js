@@ -1,11 +1,11 @@
-import express, { request } from 'express';
+import express from 'express';
 import BlogPosts from '../models/posts.model.js';
 
 const router = express.Router();
 
 export const createPost = async (request, response) => {
 	const { title, postContent } = request.body;
-	console.log(title, postContent);
+	console.log('createPost Hit!');
 	try {
 		const newPost = await BlogPosts.create({ title: title, postContent: postContent });
 		console.log(newPost);
@@ -17,6 +17,7 @@ export const createPost = async (request, response) => {
 };
 
 export const getPosts = async (request, response) => {
+	console.log('getPost Hit!');
 	try {
 		const allBlogPosts = await BlogPosts.find();
 		response.status(200).send(allBlogPosts);
@@ -28,6 +29,7 @@ export const getPosts = async (request, response) => {
 
 export const likePost = async (request, response) => {
 	const { id, userId } = request.body;
+	console.log('likePost Hit!');
 	console.log(request.body);
 	try {
 		const post = await BlogPosts.findById(id);

@@ -5,6 +5,7 @@ const router = express.Router();
 
 export const signUp = async (request, response) => {
 	const { firstname, lastname, email, password } = request.body;
+	console.log('signUp Hit!');
 	try {
 		const oldUser = await Users.findOne({ email });
 		if (oldUser) {
