@@ -16,8 +16,8 @@ export const signUp = async (request, response) => {
 			email: email,
 			password: password,
 			name: {
-				firstName: firstname,
-				lastName: lastname
+				firstname: firstname,
+				lastname: lastname
 			}
 		});
 
@@ -34,7 +34,7 @@ export const signIn = async (request, response) => {
 	console.log('signIn Hit!');
 
 	try {
-		const userExits = await User.findOne({ email });
+		const userExits = await Users.findOne({ email });
 
 		if (!userExits) {
 			response.status(404).send({ message: "User Doesn't Exit" });

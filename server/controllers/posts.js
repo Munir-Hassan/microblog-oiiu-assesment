@@ -4,10 +4,15 @@ import BlogPosts from '../models/posts.model.js';
 const router = express.Router();
 
 export const createPost = async (request, response) => {
-	const { title, postContent } = request.body;
+	const { username, title, postContent } = request.body;
 	console.log('createPost Hit!');
+	console.log(request.body);
 	try {
-		const newPost = await BlogPosts.create({ title: title, postContent: postContent });
+		const newPost = await BlogPosts.create({
+			username: username,
+			title: title,
+			postContent: postContent
+		});
 		console.log(newPost);
 		response.status(201).json({ result: newPost });
 	} catch (error) {
@@ -28,12 +33,19 @@ export const getPosts = async (request, response) => {
 };
 
 export const likePost = async (request, response) => {
-	const { id, userId } = request.body;
+	const { userId } = request.body;
+	const { id } = request.params;
 	console.log('likePost Hit!');
-	console.log(request.body);
+	console.log(request.params);
 	try {
 		const post = await BlogPosts.findById(id);
-		post.likes.push(userId);
+		if (post.likes.includes(userId)) {
+			const userIdLikeIndex = post.likes.indexOf(userId);
+			post.likes.splice(userIdLikeIndex, 1);
+		} else {
+			post.likes.push(userId);
+		}
+
 		const updatedPost = await BlogPosts.findByIdAndUpdate(id, post, { new: true });
 		console.log(post);
 		response.status(200).json(updatedPost);
