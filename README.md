@@ -6,6 +6,11 @@ Dear HR or the representatives from OiiU, Please have a look at the code base. T
 
 I am still learning and I would love to have the oppurtunity to keep learning.  
 
+Git repository-client: https://github.com/Munir-Hassan/microblog-oiiu-assesment-client-side  
+Git repository-server: https://github.com/Munir-Hassan/microblog-oiiu-assesment  
+Personality Test: https://www.16personalities.com/profiles/7bdd36d398b11  
+
+
 Given Task Requirements:  
 1) Users can create a new post.    
 2) Users can view's other's post.  
