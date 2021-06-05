@@ -1,0 +1,21 @@
+{
+  "name": "microblog-oiiu-assesment",
+  "version": "1.0.0",
+  "description": "This is a project task given by Oiiu for Junior Full Stack Developer Position",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Munir Hassan Khan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
