@@ -4,10 +4,8 @@ This project Bloging website is an assessment test for Junior Full Stack Develop
 
 Dear HR or the representatives from OiiU, Please have a look at the code base. Thank you.
 
-I am still learning and I would love to have the oppurtunity to keep learning.   
+I am still learning and I would love to have the oppurtunity to keep learning.  
 
-
-Website Preview: https://microblog-oiiu-assessment.netlify.app/  
 Git repository-client: https://github.com/Munir-Hassan/microblog-oiiu-assesment-client-side  
 Git repository-server: https://github.com/Munir-Hassan/microblog-oiiu-assesment  
 Personality Test: https://www.16personalities.com/profiles/7bdd36d398b11  
@@ -41,7 +39,7 @@ Features I implemented:
 3. I did not implement options for posting image.  
 4. I could have improved security by providing secure routes where user can't post unless  
     logged in or cannot go to signin or signup page if logged in.  
-5. Currently, I only if the user exists in database by email. I did not provide any validation on password.  
+5. Currently, I only if the user exists in database by email. I did not provide any validation on password.
 
 
 ==> There are still some issues with the UI which i have yet to fix.  
