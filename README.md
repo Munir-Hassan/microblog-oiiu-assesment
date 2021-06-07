@@ -1,8 +1,7 @@
 ***UPDATE: I have finally fixed the like post. I made a silly typo in the backend route due to which I was not able to do like/unlike per post. 
 
-This project Bloging website is an assessment test for Junior Full Stack Developer role at OiiU.
-
-Dear HR or the representatives from OiiU, Please have a look at the code base. Thank you.
+This project Bloging website is an assessment test.  
+Please have a look at the code base. Thank you.
 
 I am still learning and I would love to have the oppurtunity to keep learning.   
 

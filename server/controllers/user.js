@@ -5,6 +5,9 @@ const router = express.Router();
 
 export const signUp = async (request, response) => {
 	const { firstname, lastname, email, password } = request.body;
+
+	// I would hash the password into some unreadable text and save that to database.
+	// and then decrypt it upon retreiving and check if it matches with user password input
 	console.log('signUp Hit!');
 	try {
 		const userExists = await Users.findOne({ email });
